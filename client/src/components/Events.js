@@ -13,7 +13,7 @@ export const Events = () => {
         
         axios.get('http://localhost:3001/events')
         .then(res => {
-            console.log(res.data.events)
+            // console.log(res.data.events)
             setInitialState(res.data.events)
         })
         .catch(error => {
@@ -21,8 +21,7 @@ export const Events = () => {
         })
     }, [])
 
-const dateFormatted = ()=> {
-    let time = new Date().getTime();
+const dateFormatted = (time)=> {
     let date = new Date(time);
     return date.toString()
 }
