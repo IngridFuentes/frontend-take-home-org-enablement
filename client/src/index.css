@@ -28,7 +28,7 @@ body {
   font-weight: normal;
   font-size: 25px;
   line-height: 24px;
-  color: #571515;
+  color: #990909;
   text-align: center;
 }
 
@@ -36,8 +36,13 @@ body {
   width: 500px;
   height: 500px;
   top: 100px;
-  left: 80px;
   display: inline-block;
   background: radial-gradient(97.57% 265% at 0% 7.2%, rgba(255, 252, 252, 0.8) 0%, #FFFFFF 0.01%, rgba(255, 255, 255, 0.968847) 0.02%, rgba(255, 252, 252, 0.75) 100%);
   border-radius: 10px;
+}
+.card:hover, .card:focus, .card:active {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
