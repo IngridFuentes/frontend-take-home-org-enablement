@@ -3,7 +3,7 @@ import {Col, Container} from 'react-bootstrap';
 import ModalExample from './Modal';
 
 const Event = (props) => {
-    console.log(props.venue)
+    // console.log(props.venue)
 return (
     <>
     <Container >

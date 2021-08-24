@@ -9,9 +9,9 @@ const ModalExample = (props) => {
     const [viewport, setViewport] = useState({
         width: 400,
         height: 400,
-        latitude: 40.416775,
-        longitude: -73.935242,
-        zoom: 4
+        latitude:40.730610,
+        longitude:-73.935242,
+        zoom: 0.5
       });
     
   
