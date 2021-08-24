@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Col, Container} from 'react-bootstrap';
 import ModalExample from './Modal';
 
 const Event = (props) => {
@@ -9,8 +9,8 @@ return (
     <Container >
         <div className="card">
         <ModalExample location={props.venue}/>
-                <div className="date"> {props.start}</div>
-                {props.end}
+                <div className="date"> Start: {props.start}</div>
+                <div className="date"> End: {props.end} </div>
                 <div className="title">
                 <Col>
                     {props.title}
@@ -19,6 +19,9 @@ return (
                         <img className="images" alt="img" src={props.image} />
                 </Col> 
                 </div>
+                <Col className="join">
+                    Join us!
+                </Col>
 
         </div>
 
